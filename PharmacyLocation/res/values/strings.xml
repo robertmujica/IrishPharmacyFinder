@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string translatable="false" name="app_name">Irish Pharmacy Finder</string>
+    <string translatable="false" name="action_settings">Settings</string>
+    <string translatable="false" name="title_section1">Section 1</string>
+    <string translatable="false" name="title_section2">Section 2</string>
+    <string translatable="false" name="title_section3">Section 3</string>
+    <string translatable="false" name="all">All</string>
+    <string translatable="false" name="onlyOpen">Only Open</string>
+    
+    <!-- Address format -->
+    <string translatable="false" name="address_output_string">%1$s %2$s %3$s</string>
+    
+    <!-- Menu title -->
+
+    <!-- Labels -->
+    <string translatable="false" name="latlng">Lat/Long:</string>
+    <string translatable="false" name="address">Address:</string>
+    <string translatable="false" name="openingTime">Opening Time:</string>
+
+    <!-- Latitude, longitude format -->
+    <string translatable="false" name="latitude_longitude">%1$.8f, %2$.8f</string>
+    
+    <!-- Messages -->
+    <string translatable="false" name="connected">Client connected</string>
+    <string translatable="false" name="connection_error_code_unknown">Unknown connection error code:  %1$d</string>
+    <string translatable="false" name="connection_failed">Connection failed</string>
+    <string translatable="false" name="disconnected">Client disconnected</string>
+    <string translatable="false" name="get_address">Get Address</string>
+    <string translatable="false" name="get_location">Get Location</string>
+    <string translatable="false" name="illegal_argument_exception">
+        Illegal arguments: Latitude %1$.8f Longitude %2$.8f
+    </string>
+    <string translatable="false" name="invalid_action">Invalid intent action %1$s</string>
+    <string translatable="false" name="invalid_integer_id">Invalid integer request ID: %1$s</string>
+    <string translatable="false" name="IO_Exception_getFromLocation">IO Exception in Geocoder.getFromLocation()</string>
+    <string translatable="false" name="location_requested">Periodic updates requested</string>
+    <string translatable="false" name="location_updated">Location updated</string>
+    <string translatable="false" name="location_update_error">Location update failed</string>
+    <string translatable="false" name="location_update_error_detail">
+        Location update error. code %1$d message %2$s
+    </string>
+    <string translatable="false" name="location_update_missing_update">
+        Location update error. No incoming location.
+    </string>
+    <string translatable="false" name="location_updates_stopped">Periodic updates stopped</string>
+    <string translatable="false" name="log_new_location">New location: %1$s</string>
+    <string translatable="false" name="no_address_found">No address found for location</string>
+    <string translatable="false" name="no_connection">No connection: Cannot request location</string>
+    <string translatable="false" name="no_geocoder_available">Cannot get address. No geocoder available.</string>
+    
+    <string translatable="false" name="no_location_available">Location not available</string>
+    <string translatable="false" name="resolved">Error resolved. Please re-try operation.</string>
+    <string translatable="false" name="no_resolution">Google Play services: unable to resolve connection error.</string>
+    <string translatable="false" name="periodic_update_stop">Stopping periodic updates</string>
+    <string translatable="false" name="play_services_available">Google Play services is available</string>
+    <string translatable="false" name="request_location_updates_in_progress">
+        Can\'t request location updates, previous request hasn\'t finished
+    </string>
+    <string translatable="false" name="start_updates">Start Updates</string>
+    <string translatable="false" name="stop_updates">Stop Updates</string>
+    <string translatable="false" name="unknown">--Unknown--</string>
+    <string translatable="false" name="unknown_activity_request_code">
+        Received an unknown activity request code %1$d in onActivityResult.
+    </string>
+    <string translatable="false" name="myLocation">My Location</string>
+    
+    <!-- Preferences -->
+    <string translatable="false" name="general_settings">General Settings</string>
+    <string translatable="false" name="preference_pharmacy_search">Pharmacy Search</string>
+    <string translatable="false" name="preference_medicine_search">Medicine Search</string>
+    <string translatable="false" name="preference_search_radius">Search Radius</string>
+    <string translatable="false" name="preference_pharmacy_list_mode">Default Pharmacy Open Status</string>
+    <string translatable="false" name="summary_pharmacy_list_mode">Pharmacy Open Mode</string>
+    <string translatable="false" name="dialog_title_list_preference">Choose one</string>
+    <string translatable="false" name="summary_preference_search_radius">Default Search Radius</string>
+    <string translatable="false" name="preference_search_radius_title">Enter Search Radius</string>
+    <string translatable="false" name="about_title">About Irish Pharmacy Finder</string>
+    <string translatable="false" name="about">About</string>
+    <string translatable="false" name="version">Version</string>
+    <string translatable="false" name="website">Website</string>
+    <string translatable="false" name="developedBy">Developed by</string>
+    <string translatable="false" name="copyright">Copyright &#169; 2014</string>
+    <string translatable="false" name="devWebSiteUrl">https://www.linkedin.com/pub/robert-mujica/8/378/106</string>
+    <string translatable="false" name="webSiteUrl">http://irishpharmacyfinder.azurewebsites.net</string>
+    <string translatable="false" name="webSiteHtml"><a href='http://goo.gl/ReNUGv' target='blank'>Web Site &#38; Help</a></string>
+    <string translatable="false" name="devWebSiteHtml"><a href='http://goo.gl/ReNUGv' target='blank'>Developed By: Robert Mujica</a></string>
+    <string translatable="false" name="feedback"><a href='http://goo.gl/ReNUGv' target='blank'>Send feedback</a></string>
+    <string translatable="false" name="tellus">Tell us what you think</string>
+    <string translatable="false" name="rateus">Rate us</string>
+    <string translatable="false" name="webSiteTitle">Web Site</string>
+    
+    <!-- Action Bar Menu  -->
+    <string translatable="false" name="action_bar_search">Search</string>
+    
+    <string translatable="false" name="drawer_open">Settings</string>
+    <string translatable="false" name="drawer_close">Close Drawer</string>
+    <string translatable="false" name="hello_world">Hello world!</string>
+    <string-array translatable="false" name="operating_systems">
+        <item >Android</item>
+        <item >iPhone</item>
+        <item >Windows Mobile</item>
+    </string-array>
+    
+</resources>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:tools="http://schemas.android.com/tools"
+   android:layout_width="fill_parent"
+   android:layout_height="fill_parent">
+   
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:background="#ffff" >
+
+            <!-- Pharmacy name -->
+
+            <TextView
+                android:id="@+id/pharmacyName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="left"
+                android:textColor="#040404"
+                android:textSize="18dip"
+                android:textStyle="bold"
+                android:typeface="sans"
+                android:layout_marginRight="52dp"
+                android:ellipsize="none"
+                android:scrollHorizontally="false"
+                android:layout_toLeftOf="@+id/distance" />
+
+            <!-- Rightend Duration -->
+
+            <TextView
+                android:id="@+id/distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:layout_marginTop="3dip"
+                android:layout_weight="5"
+                android:textColor="#040404"
+                android:textSize="15dip"
+                android:textStyle="bold"
+                android:typeface="sans" />
+        </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:background="@drawable/container_dropshadow"
+        android:orientation="vertical"
+        android:padding="0dp"
+        android:stretchColumns="1" >
+
+        
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:orientation="vertical"
+            android:padding="5dp" >
+
+            <TextView
+                android:id="@+id/todayOpeningTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pharmacyName"
+                android:textColor="#343434"
+                android:textStyle="bold"
+                android:textSize="15dip"
+                android:paddingLeft="5dp" />
+
+            <TextView
+                android:id="@+id/pharmacyAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/todayOpeningTime"
+                android:textColor="#343434"
+                android:textSize="14dip"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp" />
+
+            <TextView
+                android:id="@+id/phoneNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pharmacyName"
+                android:paddingTop="3dip"
+                android:textColor="#343434"
+                android:textSize="14dip"
+                android:paddingLeft="5dp" />
+        </LinearLayout>
+        
+        <ImageView
+    android:id="@+id/imageView2"
+    android:layout_width="match_parent"
+    android:layout_height="2dp"
+    android:layout_alignParentLeft="true"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    android:background="@android:color/holo_blue_bright" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <ImageButton
+                android:id="@+id/btnNav"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:src="@drawable/navbutton" />
+
+            <ImageButton
+                android:id="@+id/btnCall"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:src="@drawable/callbutton" />
+
+            <ImageButton
+                android:id="@+id/btnShare"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:src="@drawable/sharebutton" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/container_dropshadow"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/openingTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="left"
+            android:layout_weight="1"
+            android:text="@+string/openingTime"
+            android:textColor="#040404"
+            android:textSize="17dip"
+            android:textStyle="bold"
+            android:typeface="sans"
+            android:paddingTop="10dip"
+            android:paddingLeft="10dip" />
+       
+       <ImageView
+    android:id="@+id/imageView2"
+    android:layout_width="match_parent"
+    android:layout_height="2dp"
+    android:layout_alignParentLeft="true"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    android:background="@android:color/holo_blue_bright" />
+
+        <TableLayout
+            android:id="@+id/openingTimeLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:stretchColumns="0,1" >
+
+        </TableLayout>
+        
+    </LinearLayout>
+
+</LinearLayout>
+
+<ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:indeterminate="true"
+        android:visibility="gone" />
+
+        </RelativeLayout>

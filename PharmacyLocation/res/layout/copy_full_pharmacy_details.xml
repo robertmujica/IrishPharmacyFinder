@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:tools="http://schemas.android.com/tools"
+   android:layout_width="fill_parent"
+   android:layout_height="fill_parent"
+   android:paddingBottom="@dimen/activity_vertical_margin"
+   android:paddingLeft="@dimen/activity_horizontal_margin"
+   android:paddingRight="@dimen/activity_horizontal_margin"
+   android:paddingTop="@dimen/activity_vertical_margin" >
+   
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:background="@drawable/container_dropshadow"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:stretchColumns="1" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <!-- Pharmacy name -->
+
+            <TextView
+                android:id="@+id/pharmacyName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:textColor="#040404"
+                android:textSize="22dip"
+                android:textStyle="bold"
+                android:typeface="sans" />
+
+            <!-- Rightend Duration -->
+
+            <TextView
+                android:id="@+id/distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:layout_marginTop="3dip"
+                android:layout_weight="5"
+                android:textColor="#040404"
+                android:textSize="15dip"
+                android:textStyle="bold"
+                android:typeface="sans" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <!-- Address -->
+
+            <TextView
+                android:id="@+id/pharmacyAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pharmacyName"
+                android:textColor="#343434"
+                android:textSize="14dip" />
+
+            <TextView
+                android:id="@+id/phoneNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pharmacyName"
+                android:paddingTop="2dip"
+                android:textColor="#343434"
+                android:textSize="14dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <ImageButton
+                android:id="@+id/btnNav"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:src="@drawable/navbutton" />
+
+            <ImageButton
+                android:id="@+id/btnCall"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:src="@drawable/callbutton" />
+
+            <ImageButton
+                android:id="@+id/btnWebSite"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:src="@drawable/websitebutton" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/container_dropshadow"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/openingTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="left"
+            android:layout_weight="1"
+            android:text="@+string/openingTime"
+            android:textColor="#040404"
+            android:textSize="17dip"
+            android:textStyle="bold"
+            android:typeface="sans"
+            android:paddingTop="10dip"
+            android:paddingLeft="10dip" />
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:stretchColumns="1" >
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="5dip" >
+
+                <TextView
+                    android:id="@+id/monday"
+                    android:text="Monday"
+                    android:textColor="#040404"
+                    android:textSize="22dip"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:id="@+id/mondayTime"
+                    android:layout_gravity="right|center_vertical"
+                    android:paddingRight="10dip"
+                    android:text="9:00 AM - 8:00 PM"
+                    android:textColor="#040404"
+                    android:textSize="15dip"
+                    android:typeface="sans" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="5dip" >
+
+                <TextView
+                    android:id="@+id/tuesday"
+                    android:text="Tuesday"
+                    android:textColor="#040404"
+                    android:textSize="22dip"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:id="@+id/tuesdayTime"
+                    android:layout_gravity="right|center_vertical"
+                    android:paddingRight="10dip"
+                    android:text="9:00 AM - 8:00 PM"
+                    android:textColor="#040404"
+                    android:textSize="15dip"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow3"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="5dip" >
+
+                <TextView
+                    android:id="@+id/wednesday"
+                    android:text="Wednesday"
+                    android:textColor="#040404"
+                    android:textSize="22dip"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:id="@+id/wednesdayTime"
+                    android:layout_gravity="right|center_vertical"
+                    android:paddingRight="10dip"
+                    android:text="9:00 AM - 8:00 PM"
+                    android:textColor="#040404"
+                    android:textSize="15dip"
+                    android:typeface="sans" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow4"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="5dip" >
+
+                <TextView
+                    android:id="@+id/thursday"
+                    android:text="Thursday"
+                    android:textColor="#040404"
+                    android:textSize="22dip"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:id="@+id/thursdayTime"
+                    android:layout_gravity="right|center_vertical"
+                    android:paddingRight="10dip"
+                    android:text="9:00 AM - 8:00 PM"
+                    android:textColor="#040404"
+                    android:textSize="15dip"
+                    android:typeface="sans" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow5"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="5dip" >
+
+                <TextView
+                    android:id="@+id/friday"
+                    android:text="Friday"
+                    android:textColor="#040404"
+                    android:textSize="22dip"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:id="@+id/fridayTime"
+                    android:layout_gravity="right|center_vertical"
+                    android:paddingRight="10dip"
+                    android:text="9:00 AM - 8:00 PM"
+                    android:textColor="#040404"
+                    android:textSize="15dip"
+                    android:typeface="sans" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow6"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="5dip" >
+
+                <TextView
+                    android:id="@+id/saturday"
+                    android:text="Thursday"
+                    android:textColor="#040404"
+                    android:textSize="22dip"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:id="@+id/saturdayTime"
+                    android:layout_gravity="right|center_vertical"
+                    android:paddingRight="10dip"
+                    android:text="9:00 AM - 8:00 PM"
+                    android:textColor="#040404"
+                    android:textSize="15dip"
+                    android:typeface="sans" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow7"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="5dip" >
+
+                <TextView
+                    android:id="@+id/sunday"
+                    android:text="Sunday"
+                    android:textColor="#040404"
+                    android:textSize="22dip"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:id="@+id/sundayTime"
+                    android:layout_gravity="right|center_vertical"
+                    android:paddingRight="10dip"
+                    android:text="9:00 AM - 8:00 PM"
+                    android:textColor="#040404"
+                    android:textSize="15dip"
+                    android:typeface="sans" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+</LinearLayout>
+
+<ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:indeterminate="true"
+        android:visibility="gone" />
+
+        </RelativeLayout>

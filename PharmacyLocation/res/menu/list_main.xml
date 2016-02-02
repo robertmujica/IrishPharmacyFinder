@@ -1,0 +1,42 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <item
+        android:id="@+id/refresh"
+        android:icon="@drawable/ic_refresh"
+        android:showAsAction="ifRoom"/>
+    
+    <item
+        android:id="@+id/action_search"
+        android:actionViewClass="android.widget.SearchView"
+        android:icon="@android:drawable/ic_menu_search"
+        android:showAsAction="always"
+        android:title="@string/action_bar_search"/>
+    <item
+        android:id="@+id/newLoction"
+        android:icon="@drawable/ic_launcher_maps"
+        android:showAsAction="ifRoom"/>
+    
+    <!-- <item
+        android:id="@+id/menu_toggle"
+        android:actionProviderClass="com.lochend.smartlocale.actionproviders.MenuToggleActionProvider"
+        android:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/a_More"
+        android:icon="@android:drawable/ic_menu_more"
+        android:showAsAction="always">
+        <menu>
+            
+            <item android:id="@+id/action_settings"
+        		android:showAsAction="ifRoom"
+        		android:title="@string/action_settings"
+        		android:icon="@android:drawable/ic_menu_preferences"
+        		android:actionProviderClass="com.lochend.pharmacylocation.MainActivity$SettingsActionProvider"/>
+            
+            <item android:id="@+id/action_about"
+        		android:showAsAction="ifRoom"
+        		android:title="@string/about"
+        		android:icon="@android:drawable/ic_menu_info_details"/>
+          
+        </menu>
+    </item> -->
+</menu>

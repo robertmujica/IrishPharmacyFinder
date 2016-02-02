@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="phoneNumber" />
+    <item type="id" name="latitude" />
+    <item type="id" name="longitude" />
+    <item type="id" name="pharmacyName" />
+    <item type="id" name="pharmacyDetails" />
+    <item type="id" name="search_close_btn"/>
+</resources>

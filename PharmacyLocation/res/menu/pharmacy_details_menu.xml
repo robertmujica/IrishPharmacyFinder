@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+   
+    <item
+        android:id="@+id/menu_toggle"
+        android:actionProviderClass="com.lochend.smartlocale.actionproviders.MenuToggleActionProvider"
+        android:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/a_More"
+        android:icon="@android:drawable/ic_menu_more"
+        android:showAsAction="always">
+        <menu>
+            
+            <item android:id="@+id/action_settings"
+        		android:showAsAction="ifRoom"
+        		android:title="@string/action_settings"
+        		android:icon="@android:drawable/ic_menu_preferences"
+        		android:actionProviderClass="com.lochend.pharmacylocation.MainActivity$SettingsActionProvider"/>
+        </menu>
+    </item>
+</menu>

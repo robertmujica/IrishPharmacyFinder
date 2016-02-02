@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Pharmacy Open Modes -->
+    <string-array translatable="false" name="pharmacy_open_modes">
+        <item>All</item>
+        <item>Open Only</item>
+    </string-array>
+    
+     <string-array translatable="false" name="pharmacy_open_modes_index">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    
+    <!-- Pharmacy Open Modes values -->
+    <string-array translatable="false" name="entryvalues_pharmacy_open_modes">
+        <item>openOnly</item>
+        <item>all</item> 
+    </string-array>
+    
+    <!-- Radius List -->
+    <string-array translatable="false" name="radius_list">
+        <item>All</item>
+        <item>1 km</item>
+        <item>3 km</item> 
+        <item>5 km</item>
+        <item>10 km</item>
+        <item>20 km</item>
+        <item>100 km</item>
+    </string-array>
+    
+    <!-- Radius Entry valuesList -->
+    <string-array translatable="false" name="entryvalues_radius_list">
+        <item>1000</item>
+        <item>3000</item> 
+        <item>5000</item>
+        <item>10000</item>
+        <item>20000</item>
+        <item>10000</item>
+    </string-array>
+    
+</resources>

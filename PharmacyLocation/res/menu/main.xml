@@ -1,0 +1,31 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <item
+        android:id="@+id/refresh"
+        android:icon="@drawable/ic_refresh"
+        android:showAsAction="ifRoom"/>
+    
+    <item
+        android:id="@+id/newLoction"
+        android:icon="@drawable/ic_list"
+        android:showAsAction="ifRoom"/>
+    
+    <!-- <item
+        android:id="@+id/a_More"
+        android:icon="@android:drawable/ic_menu_more"
+        android:showAsAction="always">
+        <menu>
+            
+            <item android:id="@+id/action_settings"
+        		android:showAsAction="ifRoom"
+        		android:title="@string/action_settings"
+        		android:icon="@android:drawable/ic_menu_preferences"/>
+            
+            <item android:id="@+id/action_about"
+        		android:showAsAction="ifRoom"
+        		android:title="@string/about"
+        		android:icon="@android:drawable/ic_menu_info_details"/>
+            
+        </menu>
+    </item> -->
+</menu>

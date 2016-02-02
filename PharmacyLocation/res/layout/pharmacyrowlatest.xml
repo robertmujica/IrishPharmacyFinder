@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dip" >
+ 
+    <!-- Pharmacy name -->
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#040404"
+        android:typeface="sans"
+        android:textSize="18dip"
+        android:textStyle="bold"
+        android:layout_weight="1"
+        android:ellipsize="none"
+        android:scrollHorizontally="false"/>
+ 
+    <!-- Address -->
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text1"
+        android:textColor="#343434"
+        android:textSize="15dip"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"/>
+ 
+    <!-- Rightend Duration -->
+    <TextView
+        android:id="@+id/distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/text1"
+        android:layout_marginTop="7dip"
+        android:layout_marginRight="40dip"
+        android:textSize="13dip"
+        android:textColor="#040404"
+        android:typeface="sans"
+        android:textStyle="bold"/>
+ 
+     <!-- Rightend Arrow -->
+     <ImageView 
+         android:id="@+id/rowIndicator"
+         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_navigation_expand" 
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/text1"/>
+ 
+</RelativeLayout>
